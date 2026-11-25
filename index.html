@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Ana Luiza Bandeira Silva" content="Organizador de Tarefas">
+
+    <title>Minhas Tarefas</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page">
+        <header>
+            <h1>Minhas Tarefas</h1>
+            <p>Organize seu dia a dia de forma simples e eficiente</p>
+        </header>
+        <section class="app">
+
+            <form class="add-area" id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="O que você precisa fazer hoje?"
+                >
+
+                <button class="add-btn" type="submit">
+                    Adicionar
+                </button>
+            </form>
+
+            <div class="toolbar">
+                <nav class="filters">
+                    <button class="filter active" data-filter="all">
+                        Todas
+                    </button>
+
+                    <button class="filter" data-filter="pending">
+                        Pendentes
+                    </button>
+
+                    <button class="filter" data-filter="done">
+                        Concluídas
+                    </button>
+
+                </nav>
+
+                <span class="count" id="count">
+                
+                </span>
+
+            </div>
+
+            <ul class="task-list" id="taskList"></ul>
+
+            <footer class="footer">
+
+                <button class="clear" id="clearDone">
+                    ▤ Limpar concluídas
+                </button>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
